@@ -1,29 +1,24 @@
-public class MiFecha {
-    private String dia;
-    private String mes;
-    private Int anio;
 
-    public String getDia() {
-        return dia;
+public class SeriedeFibonacci {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number");
+        int n = scanner.nextInt();
+        int num1 = 0;
+        int acum = 0;
+        int num2 = 1;
+        System.out.print( num1 + "  " );
+        System.out.print( num2 + "  " );
+        for (int i = 0; i <= n; i++ ) {
+            acum = (num1 + num2);
+            System.out.print( acum + "  " );
+            num1 = num2;
+            num2 = acum;
+
+        }
+
     }
-
-    public void setDia(String dia) {
-        this.dia = dia;
-    }
-
-    public String getMes() {
-        return mes;
-    }
-
-    public void setMes(String mes) {
-        this.mes = mes;
-    }
-
-    public Int getAnio() {
-        return anio;
-    }
-
-    public void setAnio(Int anio) {
+}
         this.anio = anio;
     }
 
